@@ -3,9 +3,6 @@
         <div class="columns is-multilie">
             <div class="column is-12">
                 <h1 class="title">Checkout</h1>
-            </div>
-
-            <div class="column is-12 box">
                 <table class="table is-fullwidth">
                     <thead>
                         <tr>
@@ -35,8 +32,6 @@
                         </tr>
                     </tfoot>
                 </table>
-            </div>
-            <div class="column is-12 box">
                 <h2 class="subtitle">Shipping details</h2>
 
                 <p class="has-text-grey mb-4">* All fields are required</p>
@@ -127,7 +122,7 @@ export default {
         }
     },
     mounted() {
-        this.cart = ths.$store.state.cart
+        this.cart = this.$store.state.cart
     },
     methods: {
         getItemTotal(item) {
